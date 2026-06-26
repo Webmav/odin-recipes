@@ -2,19 +2,25 @@ body {
     margin:0px;
     padding:0px;
     background-color:rgb(161, 255, 255);
+    width:auto;
+    height:auto;
 }
 
-#one .one {
+nav {
+    background-color:black;
+    padding:15px;
+    height:15px;
+}
+
+.one.one {
     text-align:center;
     margin:0px;
     padding:15px;
 }
 
-#one .two {
-    height: 100px;
-    width:100px;
+.one.two {
+    height: auto;
+    width:200px;
     margin:10px auto;
     padding:20px ;
 }
-
-
