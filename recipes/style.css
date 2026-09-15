@@ -6,21 +6,128 @@ body {
     height:auto;
 }
 
-nav {
-    background-color:black;
-    padding:15px;
-    height:15px;
+h2 {
+    padding: 0px;
+    margin: 0px;
 }
 
-.one.one {
-    text-align:center;
-    margin:0px;
-    padding:15px;
+.nav {
+    display: flex;
+    gap: 10px;
+    border:2px solid red;
+    height:75px;
+    width:auto;
 }
 
-.one.two {
-    height: auto;
-    width:200px;
-    margin:10px auto;
-    padding:20px ;
+.nav h1{
+    padding-left: 50px;
+}
+.nav .p {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.nav h2 {
+    padding-right: 50px;
+}
+
+#recipe {
+    display:grid;
+    grid-template-areas:
+    "biriyani al-faham chicken-curry mutton"
+    ;
+}
+
+#biriyani {
+    grid-area: biriyani;
+}
+#al-faham {
+    grid-area: al-faham;
+}
+#chicken-curry {
+    grid-area: chicken-curry;
+}
+#mutton {
+    grid-area: mutton;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 5px solid black;
+}
+
+#biriyani,
+#mutton,
+#chicken-curry,
+#al-faham {
+    .border:2px solid red;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    .heading {
+        text-align:center;
+        margin:0px;
+        margin-top:0px;
+        padding:5px;
+        min-width:100px;
+    }
+
+    .recipes {
+        height: auto;
+        width:200px;
+        margin:10px auto;
+        padding:20px ;
+        min-width:100px
+    }
+
+    a {
+        color:inherit;
+        text-decoration:none;
+    }
+
+.heading,
+.recipes {
+    font-size: 40px;
+}
+
+@media (max-width: 65em){
+    #recipe {
+    display:grid;
+    grid-template-areas:
+    "biriyani al-faham"
+    "chicken-curry mutton"
+    ;
+    }
+}
+
+@media (max-width: 30em){
+
+    .heading,
+    .recipes {
+        font-size: 40px;
+    }
+
+    #recipe {
+    display:grid;
+    grid-template-areas:
+    "biriyani"
+    "al-faham"
+    "chicken-curry"
+    "mutton"
+    ;
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    border:2px solid red;
+    height:75px;
+    width:auto;
+    align-items: flex-end;
+    margin-top:auto;
 }
