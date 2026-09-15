@@ -4,33 +4,34 @@ body {
     background-color:rgb(161, 255, 255);
     width:auto;
     height:auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
+h2,
+h1 {
     padding: 0px;
     margin: 0px;
 }
 
+
 .nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     gap: 10px;
     border:2px solid red;
     height:75px;
     width:auto;
+    padding: 0px 10px 0px 10px;
 }
 
-.nav h1{
-    padding-left: 50px;
-}
-.nav .p {
+.p {
     display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-}
-.nav h2 {
-    padding-right: 50px;
+    gap: 30px;
+    font-size: 25px;
 }
 
 #recipe {
@@ -63,7 +64,7 @@ img {
 #mutton,
 #chicken-curry,
 #al-faham {
-    .border:2px solid red;
+    border: 2px solid red;
     justify-content: center;
     align-items: flex-start;
 }
@@ -125,9 +126,97 @@ img {
 .footer {
     display: flex;
     gap: 10px;
-    border:2px solid red;
+    background-color: rgb(62, 57, 57);
     height:75px;
     width:auto;
-    align-items: flex-end;
+    justify-content: flex-end;
     margin-top:auto;
+}
+
+
+
+
+
+/* Biryani */
+.biryani img {
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+.ts-75 {
+    font-size: 75px;
+}
+.ts-50 {
+    font-size: 50px;
+}
+
+.heading {
+    margin-bottom: 25px;
+}
+
+.d-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.d-p .description {
+    margin-bottom: -15px;
+}
+.d-p .para {
+    flex: 1 1 100%;
+    justify-content: center;
+}
+
+
+.i-s {
+    display: grid;
+    grid-template-areas:
+    "i s";
+    gap: 150px;
+}
+#i {
+    grid-area: i;
+    align-items: center;
+}
+#s {
+    grid-area: s;
+}
+.i-list,
+.s-steps{
+    display: none;
+}
+
+button {
+    font-size: 50px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+@media (max-width: 65em){
+    .i-s {
+        display: grid;
+        grid-template-areas:
+        "i"
+        "s";
+        justify-content: center;
+        align-items: center;
+    }
+    #i {
+        margin: auto;
+    }
+    #s {
+        margin: auto;
+    }
 }
