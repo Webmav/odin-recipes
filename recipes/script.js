@@ -1,3 +1,9 @@
+const navImg = document.querySelector("#navImg");
+
+navImg.addEventListener('click', function() {
+    console.log("heee");
+})
+
 // biryani
 const button = document.querySelectorAll("button");
 const iList = document.querySelector(".i-list");
