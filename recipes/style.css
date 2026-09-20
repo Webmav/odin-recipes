@@ -114,39 +114,6 @@ svg {
 
 
 
-
-
-
-
-
-/* utility classes */
-
-.body {
-    font-size: var(--fs-body);
-}
-
-.primary-heading {
-    font-size: var(--fs-primary-heading);
-}
-
-.secondary-heading {
-    font-size: var(--fs-secondary-heading);
-}
-
-.nav {
-    font-size: var(--fs-nav);
-}
-
-.button {
-    font-size: var(--fs-button);
-    border-radius: var(--size-700);
-    padding: var(--size-50) var(--size-300);
-}
-
-a {
-    text-decoration: none;
-}
-
 /* Navigation */
 
 .primary-navigation {
@@ -154,17 +121,19 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
-
+    
     background-color: hsl(0, 9%, 40%);
 }
 .primary-navigation h1 {
     font-size: var(--fs-700);
     font-weight: var(--fw-bold);
 }
-.primary-navigation div.p,
-.primary-navigation .button#recipe {
+.pB {
     display: none;
 }
+/* .primary-navigation .button#recipe {
+
+} */
 .primary-navigation .button#navImgButton {
     max-width: 40px;
     border-radius: 0;
@@ -174,6 +143,36 @@ a {
     font-size: var(--fs-700);
     font-weight: var(--fw-semi-bold);
 }
+
+@media (max-width: 50em){
+    .open {
+        display: block;
+    }
+    .open.p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        
+    
+        height:500px;
+        width:400px;
+        border: 1px solid hsl(0, 0%, 31%);
+        background-color: white;
+    }
+    .open.p .nav-p {
+        font-size: var(--fs-700);
+    }
+    .open.p::before {
+        content: '';
+    }
+}
+
+/* contents */
 
 .heading {
     display: flex;
@@ -206,11 +205,10 @@ a {
 }
 
 @media (min-width: 50em) {
-    .primary-navigation div.p,
-    .primary-navigation .button#recipe {
+    .pB {
         display: block;
     }
-
+    
     .primary-navigation div.p { 
         display: flex;
         gap: clamp(var(--size-100), 5vw, var(--size-900));
@@ -227,4 +225,41 @@ a {
     background-color: black;
     height: 100px;
     width: auto;
+}
+
+
+
+
+
+
+
+
+
+/* utility classes */
+
+.body {
+    font-size: var(--fs-body);
+}
+
+.primary-heading {
+    font-size: var(--fs-primary-heading);
+}
+
+.secondary-heading {
+    font-size: var(--fs-secondary-heading);
+}
+
+.nav {
+    font-size: var(--fs-nav);
+}
+
+.button {
+    font-size: var(--fs-button);
+    border-radius: var(--size-700);
+    padding:0 var(--size-300);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
