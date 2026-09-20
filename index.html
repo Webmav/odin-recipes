@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/ehr/repos/odin-recipes/recipes/style.css">
+    <script href="/Users/ehr/repos/odin-recipes/recipes/script.js" defer></script>
+    
     <title>Odin recipes</title>
-    <link rel="stylesheet" href="/home/munawar/repo/odin-recipes/recipes/style.css">
 </head>
 
 <body>
 
-    <div class="nav">
+    <nav class="primary-navigation">
         <h1>ODIN</h1>
 
         <div class="p">
@@ -18,43 +20,46 @@
             <p class="nav-p"><a href="#">About</a></p>
         </div>
 
-        <h2>Recipes</h2>
+        <button class="button" id="recipe">
+            <h2>Recipes</h2>
+        </button>
 
-        <img id="navImg" src="/home/munawar/repo/odin-recipes/recipes/img/burger-icon.png" alt="Menu-burger">
-
-    </div>
+        <button class="button" id="navImgButton">
+            <img id="navImg" src="/Users/ehr/repos/odin-recipes/recipes/img/burger-icon.png" alt="Menu-burger">
+        </button>
+    </nav>
 
     <div class="heading"><h2>Odin recipes</h2></div>
 
-    <div id="recipe">
+    <main class="main">
         <div class="recipes" id="biriyani">
-            <a href="/home/munawar/repo/odin-recipes/recipes/biryani.html">
+            <a href="/Users/ehr/repos/odin-recipes/recipes/biryani.html">
                 <img src="./recipes/img/biryani.jpg" alt="An image of Biriyani" width="250">
                 <p>Biryani</p>
             </a>
         </div>
         <div class="recipes" id="al-faham">
-            <a href="/home/munawar/repo/odin-recipes/recipes/al-faham.html">
+            <a href="/Users/ehr/repos/odin-recipes/recipes/biryani.html">
                 <img src="./recipes/img/al-faham.png" alt="Image of Al Faham" width="250">
                 <p>Al Faham</p>
             </a>
         </div>
         <div class="recipes" id="chicken-curry">
-            <a href="/home/munawar/repo/odin-recipes/recipes/chicken-curry.html">
+            <a href="/Users/ehr/repos/odin-recipes/recipes/chicken-curry.html">
                 <img src="./recipes/img/chicken-curry.jpg" alt="Image of Chicken Curry" width="250">
                 <p>Chicken Curry</p>
             </a>            
         </div>
-        <div class="recipes" id="mutton">
-            <a href="/home/munawar/repo/odin-recipes/recipes/al-faham.html">
+        <div class="recipes" id="al-faham2">
+            <a href="/Users/ehr/repos/odin-recipes/recipes/biryani.html">
                 <img src="./recipes/img/al-faham.png" alt="Image of Al Faham" width="250">
-                <p>Mutton</p>
+                <p>Al Faham</p>
             </a>
         </div>
-    </div>
+    </main>
 
-    <div class="footer">
-
-    </div>
+    <nav class="footer">
+        Hi
+    </nav>
 </body>
 </html>
