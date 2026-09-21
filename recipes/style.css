@@ -155,7 +155,7 @@ svg {
         align-items: center;
     
         position: absolute;
-        top: 100px;
+        top: 125px;
         right: 100px;
         
     
@@ -186,9 +186,9 @@ svg {
 
 .main {
     display: grid;
+    justify-content: space-evenly;
     grid-template-areas: 
-    "biryani al-faham"
-    "chicken-curry al-faham2";
+    "biryani al-faham chicken-curry al-faham2";
     gap: 100px;
 }
 .recipes#biryani {
@@ -203,7 +203,26 @@ svg {
 .recipes#al-faham2 {
     grid-area: al-faham2;
 }
-
+.recipes p {
+    margin-inline: auto;
+    text-align: center;
+}
+@media (max-width: 50em) {
+    .main {
+        grid-template-areas: 
+        "biryani al-faham"
+        "chicken-curry al-faham2";
+    }
+}
+@media (max-width: 40em) {
+    .main {
+        grid-template-areas: 
+        "biryani"
+        "al-faham"
+        "chicken-curry"
+        "al-faham2";
+    }
+}
 @media (min-width: 50em) {
     .pB {
         display: block;
